@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5AA2EA18-8373-4491-ADB3-2FEC6C4CF6DF}</ProjectGuid>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="OpenGL_Includes.props" />
+    <Import Project="STB_Includes.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="OpenGL_Includes.props" />
+    <Import Project="STB_Includes.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="OpenGL_Includes.props" />
+    <Import Project="STB_Includes.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="OpenGL_Includes.props" />
+    <Import Project="STB_Includes.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\BasicShaders.h" />
+    <ClInclude Include="src\Bitmap.h" />
+    <ClInclude Include="src\BufferObject.h" />
+    <ClInclude Include="src\Camera.h" />
+    <ClInclude Include="src\Color.h" />
+    <ClInclude Include="src\DebugShaders.h" />
+    <ClInclude Include="src\DrawCall.h" />
+    <ClInclude Include="src\FBO.h" />
+    <ClInclude Include="src\GBuffer.h" />
+    <ClInclude Include="src\GLError.h" />
+    <ClInclude Include="src\GridVAO.h" />
+    <ClInclude Include="src\InstancedVAO.h" />
+    <ClInclude Include="src\MatrixStack.h" />
+    <ClInclude Include="src\NoCopy.h" />
+    <ClInclude Include="src\ObjLoader.h" />
+    <ClInclude Include="src\Program.h" />
+    <ClInclude Include="src\QuadVAO.h" />
+    <ClInclude Include="src\RAIIgl.h" />
+    <ClInclude Include="src\Renderbuffer.h" />
+    <ClInclude Include="src\Shader.h" />
+    <ClInclude Include="src\ShaderStructs.h" />
+    <ClInclude Include="src\Texture.h" />
+    <ClInclude Include="src\TriangleMesh.h" />
+    <ClInclude Include="src\UBO.h" />
+    <ClInclude Include="src\UniformUtil.h" />
+    <ClInclude Include="src\VAO.h" />
+    <ClInclude Include="src\Vec.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Bitmap.cpp" />
+    <ClCompile Include="src\BufferObject.cpp" />
+    <ClCompile Include="src\Camera.cpp" />
+    <ClCompile Include="src\Color.cpp" />
+    <ClCompile Include="src\DrawCall.cpp" />
+    <ClCompile Include="src\FBO.cpp" />
+    <ClCompile Include="src\GBuffer.cpp" />
+    <ClCompile Include="src\GLError.cpp" />
+    <ClCompile Include="src\GridVAO.cpp" />
+    <ClCompile Include="src\MatrixStack.cpp" />
+    <ClCompile Include="src\ObjLoader.cpp" />
+    <ClCompile Include="src\Program.cpp" />
+    <ClCompile Include="src\QuadVAO.cpp" />
+    <ClCompile Include="src\RAIIgl.cpp" />
+    <ClCompile Include="src\Renderbuffer.cpp" />
+    <ClCompile Include="src\Shader.cpp" />
+    <ClCompile Include="src\Texture.cpp" />
+    <ClCompile Include="src\TriangleMesh.cpp" />
+    <ClCompile Include="src\UniformUtil.cpp" />
+    <ClCompile Include="src\VAO.cpp" />
+    <ClCompile Include="src\Vec.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GLFW_Includes.props" />
+    <None Include="GLM_Include.props" />
+    <None Include="OpenGL_Includes.props" />
+    <None Include="src\Preamble.glsl" />
+    <None Include="STB_Includes.props" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
